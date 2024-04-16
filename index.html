@@ -151,24 +151,12 @@
 </section>
 <!-- End paper abstract -->
 
-<!-- <section class="hero teaser">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item">
-         <img src="static/images/ECCV Teaser.jpg" alt="MY ALT TEXT"/>
-         <h2 class="subtitle has-text-centered">
-           Multi-view multi-human tracking and reconstruction from uncalibrated cameras. Without knowing the intrinsic and extrinsic camera parameters, our method leverages 3D human priors and ground plane constraints to achieve automatic camera pose calibration and human tracking & reconstruction. Here, we see the reconstruction faithfully reflects the actual location and pose of the people in 3D space.
-         </h2>
-        </div>
-      </div>
-      </div>
-</section> -->
-
 
 <!-- Teaser video-->
 <section class="hero teaser">
   <div class="container">
-    <h2 class="title is-3">Overview</h2>
+      <h2 class="title is-3 has-text-centered">Method Overview</h2>
+    
     <div class="hero-body">
       <img src="static/images/ECCV Teaser.jpg" alt="Teaser Image" style="max-width: 100%; height: auto;">
       <h2 class="subtitle has-text-centered">
@@ -186,8 +174,23 @@
 </section>
 <!-- End teaser video -->
 
+<section class="hero teaser">
+  <div class="container">
+      <h2 class="title is-3 has-text-centered">Pipeline</h2>
+    
+    <div class="hero-body">
+      <img src="static/images/ECCV Overview.jpg" alt="Teaser Image" style="max-width: 100%; height: auto;">
+      <h2 class="subtitle has-text-centered">
+        We first process every single view independently
+        to get 3D human reconstruction and tracking results. Then, we match humans across
+        views to estimate camera poses, and aggregate parameters from independent views to a
+        global world coordinate, which complements accurate 3D representations of previously
+        occluded humans. Finally, we use an iterative global optimization to refine multi-human
+        tracking, 3D human poses, camera parameters, and ground plane estimation.       </h2>
 
-
+    </div>
+  </div>
+</section>
 
 <!-- Image carousel -->
 <!--
@@ -260,7 +263,7 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3">Panoptic Dataset</h2>
+      <h2 class="title is-3 has-text-centered">Panoptic Dataset</h2>
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-video1">
           <video poster="" id="video1" autoplay controls muted loop height="100%">
@@ -319,7 +322,36 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3">Further Qualitative Results</h2>
+      <h2 class="title is-3 has-text-centered">Egohumans Dataset</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-video1">
+          <video poster="" id="video1" autoplay controls muted loop height="100%">
+            <!-- Your video file here -->
+            <source src="static/videos/Fencing.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video2">
+          <video poster="" id="video2" autoplay controls muted loop height="100%">
+            <!-- Your video file here -->
+            <source src="static/videos/Lego.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        
+      </div>
+      <h2 class="subtitle has-text-centered">
+        Demo multi-view multi-human 3D tracking and reconstruction on the Egohumans dataset, featuring 2 scenes with 2-3 human subjects in each. 
+        For each scene, we first present the original videos in 3-4 views, and demonstrate the corresponding 2D reprojections and 3D reconstructions.
+      </h2>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3 has-text-centered">Further Qualitative Results</h2>
       <!--<div class="item">
         <img src="static/images/camera_pos_pred.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
