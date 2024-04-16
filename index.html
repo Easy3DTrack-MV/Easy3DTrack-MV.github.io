@@ -129,6 +129,21 @@
   </div>
 </section>
 
+
+<section class="hero teaser">
+  <div class="container">
+      <!--<h2 class="title is-3 has-text-centered">Method Overview</h2>-->
+    
+    <div class="hero-body">
+      <img src="static/images/ECCV Teaser.jpg" alt="Teaser Image" style="max-width: 100%; height: auto;">
+      <h2 class="subtitle has-text-centered">
+        Multi-view multi-human tracking and reconstruction from uncalibrated cameras. Without knowing the intrinsic and extrinsic camera parameters, our method leverages 3D human priors and ground plane constraints to achieve automatic camera pose calibration and human tracking & reconstruction. Here, we see the reconstruction faithfully reflects the actual location and pose of the people in 3D space.
+        </h2>
+
+    </div>
+  </div>
+</section>
+
 <!-- Paper abstract -->
 <section class="section hero is-light">
   <div class="container is-max-desktop">
@@ -151,24 +166,25 @@
 </section>
 <!-- End paper abstract -->
 
-
 <!-- Teaser video-->
 <section class="hero teaser">
   <div class="container">
-      <h2 class="title is-3 has-text-centered">Method Overview</h2>
+      <h2 class="title is-3 has-text-centered">Overview Video</h2>
     
     <div class="hero-body">
-      <img src="static/images/ECCV Teaser.jpg" alt="Teaser Image" style="max-width: 100%; height: auto;">
+      <!--<img src="static/images/ECCV Teaser.jpg" alt="Teaser Image" style="max-width: 100%; height: auto;">
       <h2 class="subtitle has-text-centered">
-        Multi-view multi-human tracking and reconstruction from uncalibrated cameras. Without knowing the intrinsic and extrinsic camera parameters, our method leverages 3D human priors and ground plane constraints to achieve automatic camera pose calibration and human tracking & reconstruction. Here, we see the reconstruction faithfully reflects the actual location and pose of the people in 3D space.      </h2>
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
+        Multi-view multi-human tracking and reconstruction from uncalibrated cameras. Without knowing the intrinsic and extrinsic camera parameters, our method leverages 3D human priors and ground plane constraints to achieve automatic camera pose calibration and human tracking & reconstruction. Here, we see the reconstruction faithfully reflects the actual location and pose of the people in 3D space.      </h2>-->
+        <h2 class="subtitle has-text-justified is-size-4">
+          Given an input video, we first extract multi-human tracklets from single-view videos and then achieve automatic camera calibration based on the reconstructed 3D humans. Through iterative global optimization, we jointly refine multi-human tracking, 3D human poses, camera parameters, and ground plane estimation. Extensive experiments show that our method achieves state-of-the-art performance, even when compared with methods using calibrated cameras.
+      </h2>
+        <video poster="" id="tree" autoplay controls muted loop height="100%">
         <!-- Your video here -->
         <source src="static/videos/Lego.mp4"
         type="video/mp4">
       </video>
-      <h2 class="subtitle has-text-centered">
-        Given an input video, we first extract multi-human tracklets from single-view videos and then achieve automatic camera calibration based on the reconstructed 3D humans. Through iterative global optimization, we jointly refine multi-human tracking, 3D human poses, camera parameters, and ground plane estimation. Extensive experiments show that our method achieves state-of-the-art performance, even when compared with methods using calibrated cameras. 
-      </h2>
+      
+      
     </div>
   </div>
 </section>
@@ -179,14 +195,15 @@
       <h2 class="title is-3 has-text-centered">Pipeline</h2>
     
     <div class="hero-body">
-      <img src="static/images/ECCV Overview.jpg" alt="Teaser Image" style="max-width: 100%; height: auto;">
-      <h2 class="subtitle has-text-centered">
+      <h2 class="subtitle has-text-justified is-size-4">
         We first process every single view independently
         to get 3D human reconstruction and tracking results. Then, we match humans across
         views to estimate camera poses, and aggregate parameters from independent views to a
         global world coordinate, which complements accurate 3D representations of previously
         occluded humans. Finally, we use an iterative global optimization to refine multi-human
         tracking, 3D human poses, camera parameters, and ground plane estimation.       </h2>
+      <img src="static/images/ECCV Overview.jpg" alt="Teaser Image" style="max-width: 100%; height: auto;">
+      
 
     </div>
   </div>
@@ -363,9 +380,8 @@ Results indicate that our method can accurately estimate camera poses.
       </div>-->
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/tracking switch id.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Side-by-side qualitative evaluations of 3D pose tracking performance
+        <h2 class="subtitle has-text-justified">
+          Below is a side-by-side qualitative evaluations of 3D pose tracking performance
           on the CMU Panoptic dataset. The superior consistency of our method is illus-
           trated in the top rows of each scene, where the individual encased in the red bounding
           box consistently retains their color designation, showcasing our method’s robust iden-
@@ -373,23 +389,23 @@ Results indicate that our method can accurately estimate camera poses.
           reveal the system’s vulnerability to occlusions, as highlighted by the individual in the
           orange bounding box receiving varied color identities, indicating identity switches.
        </h2>
+        <img src="static/images/tracking switch id.png" alt="MY ALT TEXT"/>
      </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/ECCV Qualitative.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
+        <h2 class="subtitle has-text-justified">
           All three rows of input
-videos are from Panoptic. Three views are presented for each input video with a
+videos below are from Panoptic. Three views are presented for each input video with a
 3D reconstruction of human(s) on the right which is shared across all views. Below
 each input video row, we demonstrate the 2D reprojections of the 3D reconstruction
 for each view.
         </h2>
+        <img src="static/images/ECCV Qualitative.jpg" alt="MY ALT TEXT"/>
       </div>
      <div class="item">
       <!-- Your image here -->
-      <img src="static/images/Further Qualitative ECCV.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Additional Qualitative results of the proposed approach. All input
+      <h2 class="subtitle has-text-justified">
+       Below are additional Qualitative results of the proposed approach. All input
 videos are from the panoptic dataset. The columns compare results from three
 methods: PHALP’, SLAHMR, and EasyRet3D. The examples include different
 ranges of people (from N = 1 to N = 6) in a given scene. The examples include
@@ -399,6 +415,8 @@ and a additional view. For our method EasyRet3D, we also show the reconstruction
 overlay to another view.
 
       </h2>
+      <img src="static/images/Further Qualitative ECCV.jpg" alt="MY ALT TEXT"/>
+      
     </div>
   </div>
 </div>
