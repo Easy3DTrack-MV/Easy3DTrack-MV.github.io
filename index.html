@@ -151,18 +151,35 @@
 </section>
 <!-- End paper abstract -->
 
+<!-- <section class="hero teaser">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item">
+         <img src="static/images/ECCV Teaser.jpg" alt="MY ALT TEXT"/>
+         <h2 class="subtitle has-text-centered">
+           Multi-view multi-human tracking and reconstruction from uncalibrated cameras. Without knowing the intrinsic and extrinsic camera parameters, our method leverages 3D human priors and ground plane constraints to achieve automatic camera pose calibration and human tracking & reconstruction. Here, we see the reconstruction faithfully reflects the actual location and pose of the people in 3D space.
+         </h2>
+        </div>
+      </div>
+      </div>
+</section> -->
+
+
 <!-- Teaser video-->
 <section class="hero teaser">
   <div class="container is-max-desktop">
-    <h2 class="title is-3">Overview Video</h2>
+    <h2 class="title is-3">Overview</h2>
     <div class="hero-body">
+      <img src="static/images/ECCV Teaser.jpg" alt="Teaser Image" style="max-width: 100%; height: auto;">
+      <h2 class="subtitle has-text-centered">
+        Multi-view multi-human tracking and reconstruction from uncalibrated cameras. Without knowing the intrinsic and extrinsic camera parameters, our method leverages 3D human priors and ground plane constraints to achieve automatic camera pose calibration and human tracking & reconstruction. Here, we see the reconstruction faithfully reflects the actual location and pose of the people in 3D space.      </h2>
       <video poster="" id="tree" autoplay controls muted loop height="100%">
         <!-- Your video here -->
         <source src="static/videos/Lego.mp4"
         type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
-        Given an input video, we propose a multi-view multi-human 3D pose estimation and tracking method where camera intrinsic and extrinsic parameters do not need to be known. We first extract multi-human tracklets from single-view videos and then achieve automatic camera calibration based on the reconstructed 3D humans. Through iterative global optimization, we jointly refine multi-human tracking, 3D human poses, camera parameters, and ground plane estimation. Extensive experiments show that our method achieves state-of-the-art performance, even when compared with methods using calibrated cameras. 
+        Given an input video, we first extract multi-human tracklets from single-view videos and then achieve automatic camera calibration based on the reconstructed 3D humans. Through iterative global optimization, we jointly refine multi-human tracking, 3D human poses, camera parameters, and ground plane estimation. Extensive experiments show that our method achieves state-of-the-art performance, even when compared with methods using calibrated cameras. 
       </h2>
     </div>
   </div>
@@ -303,16 +320,7 @@
   <div class="hero-body">
     <div class="container">
       <h2 class="title is-3">Further Qualitative Results</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/ECCV Teaser.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Multi-view multi-human tracking and reconstruction from uncalibrated cameras. Without knowing the intrinsic and extrinsic camera parameters, our method leverages 3D human priors and ground plane constraints to achieve automatic camera pose calibration and human tracking & reconstruction. Here, we see the reconstruction faithfully reflects the actual location and pose of the people in 3D space.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
+      <!--<div class="item">
         <img src="static/images/camera_pos_pred.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
           Qualitative results on camera pose estimation. The left column visualizes the
@@ -320,7 +328,7 @@ ground truth and our estimated camera poses on the Shelf dataset, and the right 
 shows the ground truth and our estimated camera poses on the Panoptic dataset.
 Results indicate that our method can accurately estimate camera poses.
         </h2>
-      </div>
+      </div>-->
       <div class="item">
         <!-- Your image here -->
         <img src="static/images/tracking switch id.png" alt="MY ALT TEXT"/>
